@@ -1,0 +1,19 @@
+/*Many elements can have the same class
+The same element can have many classes.*/
+
+/*One element can have only one id
+The id is unique*/
+
+h1, p {
+	color: blue;
+}
+
+/*Selectors without a comma works on the children of that parent (h1 p)*/
+
+/* > How you select direct children (not grandchildren) (h1>p)*/
+
+/* ~ Selcets the direct sibling (h1~p)*/
+
+/* * Selects everything in the body*/
+
+
