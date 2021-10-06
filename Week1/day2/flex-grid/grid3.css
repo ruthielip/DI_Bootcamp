@@ -1,0 +1,49 @@
+.container {
+	background-color: white;
+	height: 400px;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5px;
+	width: 50%;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+.box1, .box6 {
+	background-color: #b8336a;
+}
+
+.box2, .box7 {
+	background-color: #726da8;
+}
+
+.box3, .box8 {
+	background-color: #7c8cc4;
+}
+
+.box4 {
+    background-color: #9fd2db;
+}
+
+.box5 {
+    background-color: #c490d2;
+    grid-column: span 2;
+}
+
+.box1 {
+	grid-column: span 3;
+}
+
+.box2 {
+	grid-row: span 2;
+}
+
+.box6 {
+   grid-column: span 2;
+}
+
+.box8 {
+	grid-column: span 3;
+}

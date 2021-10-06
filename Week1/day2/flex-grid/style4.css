@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}	
+
+.section {
+	border: 3px solid black;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+
+div {
+	background-color: #B5C9FF;
+	text-align: center;
+	width: 100%;
+	height: 15%;
+	padding
+}
+
+.box1 {
+	background-color: #B09DD9;
+	/*width: 25%;*/
+}
+
+.box3 {
+	background-color: #E8A1C8;
+}
+
+.box2, .box3 {
+	flex-grow: 1;
+}
