@@ -17,6 +17,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 	margin: 10px 20% 45px 20%;
 	border-radius: 20px;
 	padding: 5px;
+
 }
 
 .glitch {
@@ -26,13 +27,13 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 .glitch:hover {
     box-shadow: 
-            1px 1px #ff2b2b,
-            2px 2px #ff2b2b,
-            3px 3px #ff2b2b,
+            1px 0 1px magenta,
+            2px 1px 2px magenta,
+            3px 2px 3px magenta,
 
-            -1px -1px #2bf4ff,
-            -2px -2px #2bf4ff,
-            -3px -3px #2bf4ff;
+            -1px -1px cyan,
+            -2px -2px cyan,
+            -3px -3px cyan;
     transform: translate(-3px);     
 }
 
@@ -50,4 +51,16 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 .title-glitch:hover {
 	text-shadow:-2px -2px 0 cyan, 2px 2px 0 magenta;
+}
+
+.nav-glitch {
+	transition: all 0.3s ease;
+}
+
+.nav-glitch:hover {
+	text-shadow:-1px -1px 0 cyan, 1px 1px 0 magenta;
+}
+
+.shadowed {
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
