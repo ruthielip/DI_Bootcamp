@@ -35,4 +35,4 @@ answer: -1
 answer: -1 
 
 "Bob" - "bill"
-answer: Bobbill
+answer: NaN
