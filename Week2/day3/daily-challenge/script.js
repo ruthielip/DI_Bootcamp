@@ -2,8 +2,8 @@ let str ="";
 
 for (let i = 0; i <= 5; i++) {
 
-	star = star + "*"
-	console.log(star)
+	str = str + "*"
+	console.log(str)
 
 }
 
