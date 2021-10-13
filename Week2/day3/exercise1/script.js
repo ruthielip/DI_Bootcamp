@@ -96,7 +96,8 @@ let details = {
 }
 
 for (let k in details) {
-	console.log(k, details[k])
+	console.log(k)
+	console.log(details[k])
 }
 
 // Exercise 7 : Secret Group
