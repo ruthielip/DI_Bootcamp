@@ -97,7 +97,11 @@ let details = {
 
 for (let k in details) {
 	console.log(k)
+<<<<<<< HEAD
   console.log(details[k])
+=======
+	console.log(details[k])
+>>>>>>> 54b204fedb433425223d7725a73c5ac44c3baccc
 }
 
 // Exercise 7 : Secret Group
