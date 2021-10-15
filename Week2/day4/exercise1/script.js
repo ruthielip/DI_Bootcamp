@@ -31,7 +31,7 @@ infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", 
 
 // Exercise 2 : Keyless Car
 
-// let age = parseFloat(prompt("How old are you?"))
+let age = parseFloat(prompt("How old are you?"))
 
 function checkDriverAge(age) {
     if (age < 18) {
@@ -89,41 +89,6 @@ function checkBasket() {
 }
 
 checkBasket()
-
-// Exercise 6 : What’s In My Wallet ?
-
-// function changeEnough(change, price) {
-//     let amount = [0.25, 0.10, 0.05, 0.01]
-// }
-
-// changeEnough([25, 50, 0, 10], 7.5)
-
-// // Exercise 7 : Shopping List
-
-// let stock = { 
-//     "banana": 6, 
-//     "apple": 0,
-//     "pear": 12,
-//     "orange": 32,
-//     "blueberry":1
-// }  
-
-// let prices = {    
-//     "banana": 4, 
-//     "apple": 2, 
-//     "pear": 1,
-//     "orange": 1.5,
-//     "blueberry":10
-// } 
-
-// let shoppingList = ["banana", "orange", "apple"]
-
-// function myBill() {
-   
-    
-// }
-
-// myBill()
 
 
 // Exercise 8 : Tips
