@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	margin: 20px auto;
+}
+
+#big-box {
+	height: 200px;
+	width: 200px;
+	background-color: #beadff;
+	border: 2px solid #30149c;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+#small-box {
+	height: 180px;
+	width: 180px;
+	background-color: #94ffed;
+	border: 2px solid #10c2a4;
+	border-radius: 10px;
+}
