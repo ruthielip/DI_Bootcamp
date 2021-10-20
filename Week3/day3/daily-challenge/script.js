@@ -1,7 +1,3 @@
-let paragraph = document.createElement("p");
-let newText = document.createTextNode("Letters Only!");
-paragraph.appendChild(newText);
-document.body.appendChild(paragraph)
 
 let input = document.createElement("input");
 let inputText = document.createTextNode("");
@@ -16,7 +12,7 @@ function lettersOnly(event){
     if((key >= 65 && key <= 90) || key == 8){
 
     } else { 
-        input.disabled = true;
+        event.preventDefault();
     }
 }
 
