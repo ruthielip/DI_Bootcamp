@@ -12,24 +12,31 @@ body{
 
 .navbar {
 	background-color: #89f09a;
-	height: 70px;
+	height: 80px;
 	width: 100vw;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 .title {
 	font-family: 'SEGA LOGO FONT', sans-serif;
 	float: left;
-	font-size: 30px;
+	font-size: 35px;
 	color: #353957;
-	margin-left: 10px; 
 }
 
 #input{
 	width: 50%;
-	height: 30px;
+	height: 35px;
 	padding-left: 10px;
 	font-family: 'Roboto', sans-serif;
+	border: 2px solid #66ccd4;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #353957;
+}
+
+::placeholder {
+  color: #66ccd4;
 }
 
 .title, #input {
@@ -74,8 +81,4 @@ body{
     text-align: left;
     color: #353957;
     margin: 5px 20px;
-}
-
-.hidden {
-	display: none;
 }
