@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daily Challenge</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+	<style>
+
+		body{
+			margin: 20px;
+			font-family: 'Rajdhani', sans-serif;
+			font-size: 20px;
+		}
+		.gif{
+			width: 400px;
+			display: block;
+			margin: 20px;
+			text-align: center;
+			transition: all 1s ease;
+		}
+
+		.gif:hover{
+			transform: scale(1.05);
+		}
+		button{
+			font-family: 'Rajdhani', sans-serif;
+			background-color: #292929;
+			color: white;
+			border: none;
+			border-radius: 2px;
+			cursor: pointer;
+		}
+
+		h1{
+			margin: 5px;
+			font-size: 50px;
+		}
+		input, button, label{
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Gif Search</h1>
+	 <form>
+            <label for="search">Search</label><br>
+            <input type="search" id="search" name="search" />
+            <button id="btn">Go</button>
+        </form>
+        <br>
+        <button id="delete">Delete all</button>
+        <div></div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
