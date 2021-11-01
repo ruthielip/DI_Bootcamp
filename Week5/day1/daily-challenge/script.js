@@ -1,8 +1,6 @@
 
 let form = document.querySelector("form");
-form.addEventListener("submit", submitJson);
-
-function submitJson(event){
+form.addEventListener("submit", function(event){
 	event.preventDefault()
 
     let obj = {
@@ -14,4 +12,5 @@ function submitJson(event){
 	let text = document.createTextNode(JSON.stringify(obj));
 	paragraph.appendChild(text);
 	form.appendChild(paragraph)
-}
+});
+
