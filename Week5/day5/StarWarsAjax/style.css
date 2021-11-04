@@ -1,0 +1,61 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(giphy.gif);
+}
+
+.main{
+    text-align: center;
+    margin: 40px;
+}
+
+.output{
+	width: 550px;
+	height: 280px;
+	border: 3px solid #ffc500;
+    border-radius: 20px;
+    margin: 20px auto;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+i{
+	font-size: 60px;
+	margin-top: 80px;
+}
+
+h2{
+	font-size: 25px;
+}
+
+#load{
+	display: none;
+}
+
+button{
+	font-size: 20px;
+	padding: 5px 15px;
+	border-radius: 8px;
+	border: 2px solid #ffc500;
+	font-family: 'Ubuntu', sans-serif;
+	cursor: pointer;
+	/*font-weight: bold;*/
+	background-color: rgba(0, 0, 0, 0.8); 
+	color: #ffc500;
+}
+
+#info {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#info p{
+	font-size: 20px;
+}
+
+.error{
+	font-size: 30px;
+	font-weight: lighter;
+}
