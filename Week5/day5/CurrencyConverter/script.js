@@ -48,16 +48,9 @@ const converter = async(event) =>{
         output.innerText = "Error!"
         result.appendChild(output)
 	}
-    
-
 }
 
 let button = document.getElementById("button");
 button.addEventListener("click", converter)
-
-
-
-
-
 
 retrieveData()
