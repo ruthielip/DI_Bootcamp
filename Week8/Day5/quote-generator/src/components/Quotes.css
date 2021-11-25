@@ -1,0 +1,54 @@
+.body{
+  height: 100vh;
+  padding: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: white;
+  width: 520px;
+  height: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.author {
+  float: right;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+button {
+position: absolute;
+right: 20px;
+bottom: 20px;
+height: 35px;
+border-radius: 5px;
+padding: 10px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
