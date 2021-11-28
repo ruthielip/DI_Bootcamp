@@ -1,0 +1,18 @@
+body {
+  margin: 20px;
+}
+
+.container-movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+
+button {
+  height: 20px;
+}
+
+p {
+  margin: 5px;
+}
