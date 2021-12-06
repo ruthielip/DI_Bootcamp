@@ -1,13 +1,14 @@
 import {useState} from 'react';
 import WeatherDisplay from './WeatherDisplay';
 
+
 const Main = () => {
   const [cityText, setCityText] = useState('');
   const [countryText, setCountryText] = useState('');
   const [weather, setWeather] = useState('')
 
   const getWeather = () => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityText},${countryText}&appid=c26c2c63db865467c1cab559f63e31da`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityText},${countryText}&appid=${key}`)
     .then(res=>res.json())
     .then(data=>{
       setWeather(data)
