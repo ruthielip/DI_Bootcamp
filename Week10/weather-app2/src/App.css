@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.label {
+  color: #f26650;
+  font-weight: 400;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 20px 140px;
+  height: 720px;
+}
+
+.main h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0;
+}
+
+.desc {
+  margin: 10px 0 20px 0;
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.weather {
+  text-align: left;
+  color: white;
+}
+
+.weather p {
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 15px;
+}
+
+.display {
+  background-color: #2b3e4f;
+  width: 92%;
+  height:510px;
+  padding: 30px;
+}
+
+input {
+  height: 35px;
+  font-size: 25px;
+  width: 30%;
+  border: none;
+  border-bottom: 2px solid #f26650;
+  background-color: transparent;
+  color: white;
+  margin: 15px;
+  font-weight: 100;
+}
+
+input:focus {
+  outline: none;
+  color: white;
+  font-weight: 100;
+}
+
+button {
+  width: 120px;
+  font-size: 15px;
+  padding: 10px 0;
+  background-color: #f26650;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
