@@ -16,8 +16,8 @@ const Book = (props) => {
               <div key={i} className='book'>
                  <img alt={book.volumeInfo.title} src= {book.volumeInfo.imageLinks.thumbnail}/>
                  <p className='title'>{book.volumeInfo.title}</p>
-                 <p>Author: {book.volumeInfo.authors}</p>
-                 <p>Published: {book.volumeInfo.publishedDate}</p>
+                 <p><span>Author:</span> {book.volumeInfo.authors}</p>
+                 <p><span>Published:</span> {book.volumeInfo.publishedDate}</p>
               </div>
             )
           })
