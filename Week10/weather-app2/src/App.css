@@ -38,51 +38,60 @@
 }
 
 .label {
-  color: #f26650;
-  font-weight: 400;
+  color: white;
+  font-weight: 600;
 }
 
 .main {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: white;
-  margin: 20px 140px;
-  height: 720px;
+  margin: 0 140px;
+  height: 100vh;
 }
 
 .main h1 {
   font-weight: 400;
   font-size: 50px;
   margin: 0;
-}
-
-.desc {
-  margin: 10px 0 20px 0;
-  font-size: 30px;
-  font-weight: 200;
-  font-style: italic;
+  color: #30373b;
 }
 
 .weather {
-  text-align: left;
   color: white;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  border-radius: 0 0 10px 10px;
 }
 
 .weather p {
   margin-top: 30px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 100;
   margin-left: 15px;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.weather p:hover {
+  transform: scale(1.1);
 }
 
 .display {
-  background-color: #2b3e4f;
-  width: 92%;
-  height:510px;
-  padding: 30px;
+  background-image: url('clouds.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
 input {
@@ -90,26 +99,42 @@ input {
   font-size: 25px;
   width: 30%;
   border: none;
-  border-bottom: 2px solid #f26650;
+  border-bottom: 2px solid black;
   background-color: transparent;
-  color: white;
-  margin: 15px;
+  color: black;
+  margin: 20px 15px 15px 0px;
   font-weight: 100;
 }
 
 input:focus {
   outline: none;
-  color: white;
+  color: #30373b;
   font-weight: 100;
 }
 
 button {
-  width: 120px;
-  font-size: 15px;
-  padding: 10px 0;
-  background-color: #f26650;
+  width: 150px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #30373b;
   color: white;
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  margin-top: 30px;
+}
+
+.title {
+  margin: 40px 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header i {
+  font-size: 60px;
+  color: #30373b;
 }
