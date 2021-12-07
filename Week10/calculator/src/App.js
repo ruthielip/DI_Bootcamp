@@ -5,7 +5,7 @@ function App() {
   const [calculate, setCalculate] = useState('');
   const [result, setResult] = useState('');
 
-  const ops = ['/', 'x', '+', '-', '.'];
+  const ops = ['/', '*', '+', '-', '.'];
 
   const handleOp = (value) => {
     if(ops.includes(value) && calculate === '' ||
@@ -59,7 +59,7 @@ function App() {
             <button key={'.'} onClick={()=>handleOp('.')}>.</button>
          </div>
          <div className='op'>
-            <button key={'x'} onClick={()=>handleOp('x')}>x</button>
+            <button key={'*'} onClick={()=>handleOp('*')}>*</button>
             <button key={'-'} onClick={()=>handleOp('-')}>-</button>
             <button key={'+'} onClick={()=>handleOp('+')}>+</button>
 
