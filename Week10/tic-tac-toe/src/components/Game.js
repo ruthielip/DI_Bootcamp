@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import Board from './Board';
 import {calculateWinner} from '../calculate'
 
@@ -15,20 +16,18 @@ const Game = () => {
     boardCopy[i] = xIsNext ? 'X' : 'O';
     setBoard(boardCopy);
     setXisNext(!xIsNext);
-  }
 
-  const jumpTo = () => {
-
+    console.log(boardCopy[i])
   }
 
   return(
     <div>
     <div className='links'>
-       <a href=''>Versus AI</a>||
-       <a href=''>2 Players</a>||
-       <a onClick={()=> setBoard(Array(9).fill(null))} href=''>Reset Board</a>
+       <Link to='/'>Versus AI</Link>||
+       <Link to='/2player' style={{backgroundColor: '#ffebf8'}}>2 Players</Link>||
+       <a onClick={()=> setBoard(Array(9).fill(null))}>Reset Board</a>
     </div>
-    <p className='turn'>{winner ? 'Winner: ' + winner : `${(xIsNext ? 'X' : 'O')}'s Turn` }</p>
+    {winner ? <p className='winner'>Winner: {winner}!</p> : xIsNext ? <p className='turn'>X's Turn</p> : <p className='turn'>O's Turn</p>}
     <Board squares={board} onClick={handleClick}/>
     </div>
   )
